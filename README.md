@@ -1,4 +1,4 @@
-# ReasonMl starter project
+# Rust starter project
 [![.github/workflows/test.yml](../../actions/workflows/test.yml/badge.svg)](../../actions/workflows/test.yml)
 
 ## Install
@@ -14,3 +14,19 @@ Execute the tests with:
 $ ./run_tests.bat
 ```
 
+## Rust Installation
+
+Install Rust-up
+https://www.rust-lang.org/learn/get-started
+
+VSCode with plugin
+Use the vs code plugin "rust-analyzer"
+
+
+## Formatting Code
+
+To format your solution, inside the solution directory use
+
+```bash
+cargo fmt
+```

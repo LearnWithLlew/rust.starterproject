@@ -1,1 +1,1 @@
-npm run test:ci
+cargo test
