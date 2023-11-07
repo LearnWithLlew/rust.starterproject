@@ -7,8 +7,10 @@
 
 iwr -useb https://raw.githubusercontent.com/JayBazuzi/machine-setup/main/windows.ps1 | iex
 
-choco install nodejs
-refreshenv
+choco install rust
+@(
+    'rust-lang.rust-analyzer'
+) | % { & "C:\Program Files\Microsoft VS Code\bin\code.cmd" --install-extension $_ }
 
 # Clone repo
 & "C:\Program Files\Git\cmd\git.exe" clone https://github.com/LearnWithLlew/yourlanguage.starterproject.git C:\Code\yourlanguage.starterproject
